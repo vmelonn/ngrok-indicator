@@ -1,0 +1,10 @@
+{
+  "uuid": "ngrok-indicator@reemostat.github.io",
+  "name": "Ngrok Indicator",
+  "description": "Panel indicator for ngrok status and active tunnels.\n\nClipboard: copies tunnel URLs to the clipboard when you click a tunnel menu item.",
+  "version": 1,
+  "settings-schema": "org.gnome.shell.extensions.ngrok-indicator",
+  "shell-version": ["46"],
+  "url": "https://github.com/vmelonn/ngrok-indicator"
+}
+

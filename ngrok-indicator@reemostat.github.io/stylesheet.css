@@ -1,0 +1,16 @@
+.ngrok-indicator-icon {
+  padding: 0 6px;
+}
+
+.ngrok-indicator--dead {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.ngrok-indicator--running {
+  color: #33d17a; /* GNOME green */
+}
+
+.ngrok-indicator--idle {
+  color: #ff7800; /* GNOME orange */
+}
+
