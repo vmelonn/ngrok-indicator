@@ -2,15 +2,29 @@
   padding: 0 6px;
 }
 
-.ngrok-indicator--dead {
-  color: rgba(255, 255, 255, 0.45);
+.ngrok-indicator-badge {
+  width: 8px;
+  height: 8px;
+  margin-top: 1px;
+  margin-right: 1px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
 }
 
-.ngrok-indicator--running {
-  color: #33d17a; /* GNOME green */
+.ngrok-indicator-badge--up {
+  background-color: #33d17a; /* GNOME green */
 }
 
-.ngrok-indicator--idle {
-  color: #ff7800; /* GNOME orange */
+.ngrok-indicator-badge--down {
+  background-color: #e01b24; /* GNOME red */
+}
+
+.ngrok-indicator-tunnel-row .popup-menu-icon {
+  icon-size: 16px;
+}
+
+.ngrok-indicator-stop-button {
+  padding: 2px 6px;
+  border-radius: 6px;
 }
 

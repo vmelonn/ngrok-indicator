@@ -16,6 +16,26 @@
       <summary>Base URL for ngrok local API</summary>
       <description>Where the extension polls for active tunnels.</description>
     </key>
+    <key name="cloud-api-key" type="s">
+      <default>''</default>
+      <summary>ngrok API key</summary>
+      <description>API key used to query ngrok cloud API (stored locally). This is configured from the preferences window.</description>
+    </key>
+    <key name="cloud-account-email" type="s">
+      <default>''</default>
+      <summary>Account email</summary>
+      <description>Cached account email fetched from ngrok cloud API.</description>
+    </key>
+    <key name="cloud-plan-name" type="s">
+      <default>''</default>
+      <summary>Plan name</summary>
+      <description>Cached plan name fetched from ngrok cloud API when available.</description>
+    </key>
+    <key name="max-concurrent-tunnels" type="i">
+      <default>0</default>
+      <summary>Maximum concurrent tunnels</summary>
+      <description>Maximum number of tunnels to allow from the UI. 0 means unknown/unset.</description>
+    </key>
   </schema>
 </schemalist>
 
