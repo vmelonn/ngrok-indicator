@@ -3,14 +3,27 @@ import Soup from 'gi://Soup?version=3.0';
 
 const DEFAULT_BASE_URL = 'http://127.0.0.1:4040';
 
+function normalizeWebBaseUrl(input) {
+  let s = (input ?? '').trim();
+  if (!s)
+    return DEFAULT_BASE_URL;
+
+  // Accept both "...:4040" and "...:4040/api" as input.
+  s = s.replace(/\/+$/, '');
+  s = s.replace(/\/api$/, '');
+  s = s.replace(/\/+$/, '');
+
+  return s || DEFAULT_BASE_URL;
+}
+
 export class NgrokApi {
   constructor({ baseUrl = DEFAULT_BASE_URL } = {}) {
-    this._baseUrl = baseUrl;
+    this._baseUrl = normalizeWebBaseUrl(baseUrl);
     this._session = new Soup.Session();
   }
 
   setBaseUrl(baseUrl) {
-    this._baseUrl = baseUrl?.trim() || DEFAULT_BASE_URL;
+    this._baseUrl = normalizeWebBaseUrl(baseUrl);
   }
 
   get baseUrl() {

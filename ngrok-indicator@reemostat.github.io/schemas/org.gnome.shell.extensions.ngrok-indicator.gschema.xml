@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist>
+<schemalist gettext-domain="ngrok-indicator">
   <schema id="org.gnome.shell.extensions.ngrok-indicator" path="/org/gnome/shell/extensions/ngrok-indicator/">
+    <key name="api-base-url" type="s">
+      <default>'http://127.0.0.1:4040'</default>
+      <summary>ngrok Local API Base URL</summary>
+      <description>The base URL for the local ngrok agent API (usually http://127.0.0.1:4040).</description>
+    </key>
     <key name="ngrok-binary-path" type="s">
       <default>'/usr/local/bin/ngrok'</default>
-      <summary>Path to ngrok binary</summary>
-      <description>Absolute path to the ngrok executable used when starting tunnels.</description>
+      <summary>ngrok Binary Path</summary>
+      <description>Path to the ngrok executable.</description>
     </key>
     <key name="config-path" type="s">
       <default>''</default>
-      <summary>Path to ngrok.yml</summary>
-      <description>Optional override path to ngrok config file. If empty, defaults to ~/.config/ngrok/ngrok.yml.</description>
-    </key>
-    <key name="api-base-url" type="s">
-      <default>'http://127.0.0.1:4040'</default>
-      <summary>Base URL for ngrok local API</summary>
-      <description>Where the extension polls for active tunnels.</description>
-    </key>
-    <key name="cloud-api-key" type="s">
-      <default>''</default>
-      <summary>ngrok API key</summary>
-      <description>API key used to query ngrok cloud API (stored locally). This is configured from the preferences window.</description>
-    </key>
-    <key name="cloud-account-email" type="s">
-      <default>''</default>
-      <summary>Account email</summary>
-      <description>Cached account email fetched from ngrok cloud API.</description>
-    </key>
-    <key name="cloud-plan-name" type="s">
-      <default>''</default>
-      <summary>Plan name</summary>
-      <description>Cached plan name fetched from ngrok cloud API when available.</description>
+      <summary>ngrok Configuration File Path</summary>
+      <description>Optional path to ngrok.yml.</description>
     </key>
     <key name="max-concurrent-tunnels" type="i">
       <default>0</default>
-      <summary>Maximum concurrent tunnels</summary>
-      <description>Maximum number of tunnels to allow from the UI. 0 means unknown/unset.</description>
+      <summary>Max Concurrent Tunnels</summary>
+      <description>Maximum number of allowed tunnels (0=unknown, -1=unlimited).</description>
     </key>
   </schema>
 </schemalist>
-

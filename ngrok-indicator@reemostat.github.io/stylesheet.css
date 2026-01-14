@@ -1,12 +1,10 @@
 .ngrok-indicator-icon {
-  padding: 0 6px;
+  padding: 0 8px;
 }
 
 .ngrok-indicator-badge {
   width: 8px;
   height: 8px;
-  margin-top: 1px;
-  margin-right: 1px;
   border-radius: 999px;
   border: 1px solid rgba(0, 0, 0, 0.35);
 }
@@ -19,12 +17,54 @@
   background-color: #e01b24; /* GNOME red */
 }
 
+.ngrok-running-icon {
+  color: #33d17a; /* GNOME green */
+}
+
 .ngrok-indicator-tunnel-row .popup-menu-icon {
   icon-size: 16px;
 }
 
-.ngrok-indicator-stop-button {
-  padding: 2px 6px;
-  border-radius: 6px;
+.ngrok-dead-icon {
+  color: #e01b24; /* GNOME red */
 }
 
+/* Base button class */
+.ngrok-indicator-button {
+  padding: 4px 8px;
+  border-radius: 99px;
+  margin-left: 6px;
+}
+
+.ngrok-indicator-button:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.ngrok-stop-button:hover {
+  background-color: rgba(224, 27, 36, 0.2); /* Red tint on hover */
+}
+
+.ngrok-proto-badge {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 4px;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 0 4px;
+  margin-left: 8px;
+  color: inherit;
+}
+
+.ngrok-tunnel-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.ngrok-tunnel-url {
+  font-size: 0.9em;
+  color: inherit;
+  opacity: 0.7;
+}
+
+.ngrok-action-buttons {
+  spacing: 4px;
+}

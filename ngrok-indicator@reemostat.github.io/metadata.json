@@ -1,7 +1,7 @@
 {
   "uuid": "ngrok-indicator@reemostat.github.io",
   "name": "Ngrok Indicator",
-  "description": "Panel indicator for ngrok status and active tunnels.\n\nFeatures:\n* Status badge in the top bar\n* Active tunnels list (click to copy URL)\n* Stop tunnels from the menu\n* Start saved tunnels from ngrok.yml\n\nPrivacy/permissions:\n* Clipboard: copies tunnel URLs only when you click a tunnel\n* Network: may query https://api.ngrok.com/account from preferences when you provide an API key",
+  "description": "Panel indicator for ngrok status and active tunnels.\n\nFeatures:\n* Status badge in the top bar\n* Active tunnels list (click to copy URL)\n* Stop tunnels from the menu\n* Start saved tunnels from ngrok.yml",
   "version": 1,
   "settings-schema": "org.gnome.shell.extensions.ngrok-indicator",
   "shell-version": ["46"],
